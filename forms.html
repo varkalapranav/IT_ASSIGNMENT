@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forms</title>
+</head>
+<body style="background-color: violet;">
+	<form>
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname" ><br> <!-- writing value is not mandatory it is used to give the default value into the text writing id is not a mandatory thing because it is used to when wanted the submit the text into the server one obvious thing for attribute in the label and id attribute in the input has to be matched because it has to be colect into that so/ text is used to input the format in the text form....... -->
+		<label for="lname">Last name:</label>
+		<input type="text" id="lname" name="lname"><br>
+		<label for="roll">ID no.:</label>
+		<input type="text" id="roll" name="roll" ><br>
+		<p>Select your gender:</p>
+		<label >Male</label>
+		<input type="radio" name="gender" value="male">
+		<label>Female</label>
+		<input type="radio" name="gender" value="Female">
+		<label>others</label>
+		<input type="radio" name="gender" value="others">
+		<p>Select the branches you are interested in:</p>
+		<label>CSE</label>
+		<input type="checkbox" name=" branch" value="CSE">
+		<label>ECE</label>
+		<input type="checkbox" name="branch" value="ECE">
+		<label>EEE</label>
+		<input type="checkbox" name="branch" value="EEE">
+		<label>CE</label>
+		<input type="checkbox" name="branch" value="CE">
+		<label>CHEM</label>
+		<input type="checkbox" name="branch" value="CHEM"><br>
+		select your caste:
+		<select > <!--  size is ud=sed display how many items once multiple is ussed to select the multiple -->
+			<option value="SC">SC</option>
+			<option value="BC">BC</option>
+			<option value="OC">OC</option>
+			<option value="others" selected> others</option> <!-- selected is used show the default value --> 
+		</select><br><br><br>
+		<textarea rows="10" cols="10">
+			we can write anything in this page we can give size of the textarea to be in the form of rows and coloumns  and it is dragable
+		</textarea><br><br>
+		<fieldset>
+			<legend>Personal information</legend>
+			<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname" ><br> <!-- writing value is not mandatory it is used to give the default value into the text writing id is not a mandatory thing because it is used to when wanted the submit the text into the server one obvious thing for attribute in the label and id attribute in the input has to be matched because it has to be colect into that so/ text is used to input the format in the text form....... -->
+		<label for="lname">Last name:</label>
+		<input type="text" id="lname" name="lname"><br>
+		<label for="roll">ID no.:</label>
+		<input type="text" id="roll" name="roll" ><br>
+		</fieldset><br><br>
+		<label>cars:</label>
+		<input list="cars">
+		<datalist id="cars">
+			<option value="Audi">Audi</option>
+			<option value="BMW">BMW</option>
+			<option value="Benz">Benz</option>
+			<option value="Jaguar" > Jaguar</option>
+		</datalist>
+		<button>check</button><br>
+		<input type="submit"><br>
+		<input type="button" value="try again">
+	</form>
+</body>
+</html>
